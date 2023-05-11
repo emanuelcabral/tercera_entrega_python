@@ -17,6 +17,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+# esto escribio el profe -inicia
+from miproyecto.views import saludar
+# esto escribio el profe -fin
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    # esto escribio el profe -inicia
+    path('saludo/', saludar),
+    # esto escribio el profe -fin
 ]
